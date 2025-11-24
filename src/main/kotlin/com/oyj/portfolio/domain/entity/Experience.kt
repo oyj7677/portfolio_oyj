@@ -66,6 +66,8 @@ class Experience(
     }
 
     fun addDetails(details: MutableList<ExperienceDetail>?) {
+        println("addDetails called")
+        println("details.size : ${details?.size}")
         if (details != null) {
             this.details.addAll(details)
         }

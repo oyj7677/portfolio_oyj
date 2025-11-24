@@ -6,6 +6,6 @@ import java.time.LocalDateTime
 
 interface HttpInterfaceRepository : JpaRepository<HttpInterface, Long> {
 
-    fun countAllByCreatedDateTimeBeTween(start: LocalDateTime, end: LocalDateTime)
+    fun countAllByCreatedDateTimeBetween(start: LocalDateTime, end: LocalDateTime)
 
 }

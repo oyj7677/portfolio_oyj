@@ -30,7 +30,7 @@ class PresentationViewController(
     fun resume(model: Model): String {
         val resume = presentationService.getResume()
         model.addAttribute("resume", resume)
-        model.addAttribute("skillTypes", SkillType.values())
+        model.addAttribute("skillTypes", SkillType.entries.toTypedArray())
 
         return "presentation/resume"
     }

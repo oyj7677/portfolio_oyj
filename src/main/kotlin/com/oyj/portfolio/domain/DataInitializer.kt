@@ -50,7 +50,7 @@ class DataInitializer(
 
         val links = mutableListOf<Link>(
             Link(name = "Github", content = "https://github.com/oyj7677", isActive = true),
-            Link(name = "daum", content = "www.daum.net", isActive = true)
+            Link(name = "Linkedin", content = "https://www.linkedin.com/in/yeongjae-oh-2b1999269/", isActive = true)
         )
 
         linkRepository.saveAll(links)

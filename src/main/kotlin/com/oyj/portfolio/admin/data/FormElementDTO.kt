@@ -12,7 +12,7 @@ class TextFormElementDTO(
     size: Int
 ) : FormElementDTO(name = name, size = size, type = "text")
 
-class DeleteFormElementDTO(
+class DateFormElementDTO(
     name: String,
     size: Int
 ) : FormElementDTO(name = name, size = size, type = "delete")

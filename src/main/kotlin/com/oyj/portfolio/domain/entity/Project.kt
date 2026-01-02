@@ -8,8 +8,8 @@ class Project(
     description: String,
     startYear: Int,
     startMonth: Int,
-    endYear: Int,
-    endMonth: Int,
+    endYear: Int?,
+    endMonth: Int?,
     isActive: Boolean
 ) : BaseEntity() {
 
@@ -50,12 +50,12 @@ class Project(
     }
 
     fun update(
-        title: String,
+        name: String,
         description: String,
         startYear: Int,
         startMonth: Int,
-        endYear: Int,
-        endMonth: Int,
+        endYear: Int?,
+        endMonth: Int?,
         isActive: Boolean
     ) {
         this.name = name
